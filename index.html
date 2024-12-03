@@ -1,11 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <title>Game Website</title>
+    <link rel="crossbrower" href="Normalize.css">
+    <link rel="stylesheet" href="style.css"> 
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <img src="images/Logo_for_ID.png" alt="Logo" class="navbar-logo">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#buy">Buy Now!</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="video-hero">
+      <video autoplay muted loop>
+        <source src="images/ID_VID.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h1>Sword Art Online: VR<br>Full Dive Tech</h1>
+    </section>
+
+    <main>
+      <section id="home">
+        <div class="container">
+          <h2>What's Happening?</h2>
+          <div class="home">
+            <a href="UpdLog.html">
+            <div class="home-item">
+              <img src="images/SAO_prgupdate.webp" alt="Progress">
+              <div class="home-info">
+                <h3>Progress Update</h3>
+                <p>Beta V1.9.4 Update Changelog</p>
+              </div>
+            </div>
+            </a>
+            <div class="home-item">
+              <img src="images/SAO_Events.webp" alt="Events">
+              <div class="home-info">
+                <h3>Current Events</h3>
+                <p>Find Out More on Events Here!</p>
+              </div>
+            </div>
+            <div class="home-item">
+              <img src="images/SAO-News.png" alt="News">
+              <div class="home-info">
+                <h3>News</h3>
+                <p>Get to Know Whats Happening Now</p>
+              </div>
+            </div>
+            <div class="home-item">
+              <img src="images/SAO_Social.webp" alt="Socials">
+              <div class="home-info">
+                <h3>Socials</h3>
+                <p>Stay Informed by Following Us!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <h2>Discover the World of Aincrad!</h2>
+        <div class="container">
+          <div class="about-item">
+            <h3><b>Choose Your Path</b></h3>
+            <p>You start in the Town of Beginnings, a sprawling medieval city bustling with merchants, blacksmiths, and adventurers. Here, you forge your path. Will you be a lone wanderer, a skilled swordsman wielding precision and speed? Or will you join a guild, pooling strength and knowledge to conquer the tower together? Perhaps you'll master magic, bending the elements to your will, or specialize in crafting, creating powerful gear and potions to aid others.</p>
+          </div>
+          <div class="about-item">
+            <h3><b>Combat and Strategy</b></h3>
+            <p>Combat in Aincrad is dynamic and immersive. Timing, positioning, and strategy are crucial. Each monster you face has unique patterns and weaknesses, from the feral Ironfang Wolves of Floor 1 to the enigmatic Crystal Sentinels guarding Floor 20's shimmering caverns. Victory depends on your ability to adapt and innovate, whether you're dueling a towering boss or navigating the traps of a labyrinthine dungeon.</p>
+          </div>
+          <div class="about-item">
+            <h3>Exploration and Discovery</h3>
+            <p>Aincrad rewards the curious. Hidden quests and unmarked locations hold ancient relics, forgotten spells, and secrets that unravel the Tower's history. Engage with NPCs who offer cryptic clues or betray hidden agendas. Explore the edges of each floor, where the sky seems to fall away into infinity, and uncover paths that may lead to glory — or ruin.
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="misc">
+        <div class="container">
+          <h2>Miscellaneous</h2>
+          <div class="misc">
+            <div class="misc-item">
+              <img src="images/SAO_bkgrnd.jpg" alt="Wallpapers">
+              <div class="misc-info">
+                <h3>SAO Wallpapers</h3>
+                <p>Get Free Public Wallpapers Here!</p>
+              </div>
+            </div>
+            <div class="misc-item">
+              <img src="images/SAO_OST.webp" alt="OSTs">
+              <div class="misc-info">
+                <h3>In-Game OSTs</h3>
+                <p>Enjoy Music by Pro Musicians.</p>
+              </div>
+            </div>
+            <div class="misc-item">
+              <img src="images/SAO_Search.webp" alt="Search">
+              <div class="misc-info">
+                <h3>Search Here!</h3>
+                <p>Can't Find Something? Try Here.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="buy">
+        <h2>Get Yours Now!</h2>
+        <div class="container">
+          <div class="buy-item">
+            <h3><b><u>Starter Pack</u></b></h3>
+            <p>- 2nd Gen Full-Dive Headset
+              <br><br>
+              - Discord Rank Newbie
+              <br><br>
+              - Access to Game 1 Day Before Full Release
+            </p>
+            <button class="buy-button" onclick="window.location.href='buy-home.html?pack=starter'">$5999</button>
+          </div>
+          <div class="buy-item">
+            <h3><b><u>Advanced Pack</u></b></h3>
+            <p>- All Previous Benefits (Excluding Headsets)
+              <br><br>
+              - 3rd Gen Full-Dive Headset
+              <br><br>
+              - Discord Rank Swordsman
+              <br><br>
+              - Access to Game 3 Days Before Full Release
+              <br><br>
+              - Code for x1.2 Experience Points Boost
+              <br><br>
+              - Ability to Make Suggestions to the Developers
+            </p>
+            <button class="buy-button" onclick="window.location.href='buy-home.html?pack=advanced'">$8999</button>
+          </div>
+          <div class="buy-item">
+            <h3><b><u>Collector's Pack</u></b></h3>
+            <p>- All Previous Benefits (Excluding Headsets)
+              <br><br>
+              - Artisan's 3rd Gen Full-Dive Headset
+              <br><br>
+              - Discord Rank Demon Lord (Or choose your own custom rank!)
+              <br><br>
+              - Access to Game 5 Days Before Full Release
+              <br><br>
+              - Personal Code for All Floor Maps (Linked to Account)
+              <br><br>
+              - Our Eternal Gratitude
+            </p>
+            <button class="buy-button" onclick="window.location.href='buy-home.html?pack=collector'">$12999</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy; 2024 Sword Art Online : Virtual Reality. All Rights Reserved.</p>
+    </footer>
+  </body>
 </html>
